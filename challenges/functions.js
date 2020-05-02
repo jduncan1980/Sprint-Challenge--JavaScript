@@ -38,8 +38,7 @@ console.log(consume('Mary', 'Poppins', greeting)); // Hello Mary Poppins, nice t
 // Explain in your own words why nestedfunction can access the variable internal.
 
 // Explanation:
-
-// Lexical scoping means that if a function doesn't contain a variable internally, it will look at it's outer scope. In this case, not seeing the variable inside it's own brackets, it would look in myFunction. If it didn't find it there, it would then look in the global scope. This is why closures work.
+// Lexical scoping means that if a function doesn't contain a variable internally, it will look at it's outer scope. In this case, not seeing the variable inside it's own brackets, it would look in myFunction. If it didn't find it there, it would then look in the global scope. This is why closures work: A function always has access to the variables that were in scope at the time it was defined.
 
 const external = "I'm outside the function";
 
